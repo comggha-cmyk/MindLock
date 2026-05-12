@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DisciplineX</string>
+    <string name="accessibility_service_label">DisciplineX App Blocker</string>
+    <string name="accessibility_service_description">DisciplineX uses Accessibility Services to detect and block distracting apps, helping you stay focused and disciplined.</string>
+    <string name="accessibility_service_summary">Monitors app launches to block distracting apps</string>
+    <string name="notification_listener_label">DisciplineX Notification Manager</string>
+    <string name="channel_alarm_id">disciplinex_alarm</string>
+    <string name="channel_alarm_name">Alarm Notifications</string>
+    <string name="channel_focus_id">disciplinex_focus</string>
+    <string name="channel_focus_name">Focus Session</string>
+    <string name="channel_reminder_id">disciplinex_reminder</string>
+    <string name="channel_reminder_name">Daily Reminders</string>
+</resources>

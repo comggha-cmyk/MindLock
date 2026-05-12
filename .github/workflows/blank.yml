@@ -19,14 +19,17 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x MindLock/gradlew
+      - name: List project structure
+        run: ls -la && ls -la MindLock
+
+      - name: Grant permission
+        run: chmod +x MindLock/MindLock/gradlew
 
       - name: Build Debug APK
-        run: cd MindLock && ./gradlew assembleDebug --stacktrace
+        run: cd MindLock/MindLock && ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: MindLock-Debug-APK
-          path: MindLock/app/build/outputs/apk/debug/app-debug.apk
+          path: MindLock/MindLock/app/build/outputs/apk/debug/app-debug.apk
